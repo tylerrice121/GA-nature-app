@@ -50,6 +50,7 @@ export default function Home() {
             </p>
           </a>
         </div>
+        <h2>hey from tyler!</h2>
       </main>
 
       <footer className={styles.footer}>
