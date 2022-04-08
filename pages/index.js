@@ -20,6 +20,10 @@ const Container = styled.div`
   text-align: center;
 `
 
+export const getStaticProps = () => {
+  
+}
+
 export default function Home() {
   return (
     <Container>
