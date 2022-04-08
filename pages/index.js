@@ -20,15 +20,15 @@ const Container = styled.div`
   text-align: center;
 `
 
-export const getStaticProps = () => {
-  
-}
 
 export default function Home() {
   return (
     <Container>
       <Button>Normal Button</Button>
       <Button primary>Primary Button</Button>
+      <Link href="/parks">
+        <a>Check our parks!</a>
+      </Link>
     </Container>
   )
 }

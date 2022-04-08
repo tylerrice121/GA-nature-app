@@ -23,12 +23,20 @@ export const getStaticProps = async (context) => {
 
 
 export default function Park({info}){
-  console.log(info)
   const router = useRouter()
-  const pathName = router.pathname
   return(
     <div>
       {info.title}
+      {
+        info.reviewsCollection.items.length ?
+        <p>
+          There are reviews for this park.
+        </p>
+        :
+        <p>
+          There are no reviews for this park.
+        </p>
+      }
     </div>
   )
 

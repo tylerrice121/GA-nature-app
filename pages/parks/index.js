@@ -21,7 +21,7 @@ export const getStaticProps = async () => {
 export default function ParkDisplay({parks}){
   return(
     <div>
-      Park Display
+      <h1>Park Display</h1>
       {
         parks.map((p) => (
           <Link href={`/parks/${p.slug}`} passHref key={p.slug}>
